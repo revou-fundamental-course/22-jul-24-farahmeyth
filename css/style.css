@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.top-header .logo img {
+    height: 40px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    /* padding: 20px; Added padding to the header */
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header p {
+    margin: 0;
+    font-size: 18px;
+    padding-top: 20px;
+    color: #666;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the main content */
+}
+
+.left-content {
+    width: 65%; /* Increased width */
+    margin-right: 5%; /* Adjusted margin */
+}
+
+.right-content {
+    width: 30%; /* Increased width */
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+    
+}   
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: hsl(0, 0%, 88%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.testimonial .name {
+    font-weight: bold;
+}
+
+.contact-form h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form select{
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form button{
+    width: 99%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 40px;
+    margin: 40px 0; /* Add margin to separate from other sections */
+    counter-reset: step-counter; /* Initialize counter */
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between items */
+    font-size: 16px; /* Increase font size for text */
+    color: #666; /* Set text color */
+    position: relative; /* Make the pseudo-element positioning relative to this */
+}
+
+.features li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    background-color: #e0e0e0;
+    color: #007bff;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 18px; /* Increase font size for numbers */
+    position: absolute;
+    left: -45px; /* Adjust the position of the circle */
+}
+.package-section {
+    text-align: center;
+    margin: 40px 0;
+    
+}
+
+.package-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 20px 0; 
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Gap between packages */
+}
+
+.package {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.package h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.package p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.package h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.package p {
+    font-size: 14px;
+    color: #666;
+}
+.closing-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.closing-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.closing-section p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.closing-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.footer a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 300px; /* Fixed height for the container */
+    overflow: hidden; /* Hide overflow */
+}
+
+.mySlides {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
